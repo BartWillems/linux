@@ -118,7 +118,7 @@ spinlock, but you may block holding a mutex. If you can't lock a mutex,
 your task will suspend itself, and be woken up when the mutex is
 released. This means the CPU can do something else while you are
 waiting. There are many cases when you simply can't sleep (see
-`What Functions Are Safe To Call From Interrupts? <#sleeping-things>`__),
+`What Functions Are Safe To Call From Interrupts? <#what-functions-are-safe-to-call-from-interrupts>`__),
 and so have to use a spinlock instead.
 
 Neither type of lock is recursive: see
